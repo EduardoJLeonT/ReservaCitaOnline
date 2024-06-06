@@ -18,7 +18,8 @@ class ProyectoFactory extends Factory
     {
         return [
             'nombre' => fake()->word(),
-            'Ubicacion_Descripcion' => fake()->text(),
+            'ubicacion' => fake()->word(),
+            'descripcion' => fake()->text(),
         ];
     }
 }

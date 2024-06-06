@@ -22,6 +22,7 @@ class ApartamentoController extends Controller
      */
     public function create()
     {
+        return view('apartamentos.create');
         //
     }
 
@@ -30,6 +31,8 @@ class ApartamentoController extends Controller
      */
     public function store(Request $request)
     {
+        Apartamento::create($request->all());
+        return redirect()->route ('apartamentos.index');
         //
     }
 
@@ -46,6 +49,7 @@ class ApartamentoController extends Controller
      */
     public function edit(Apartamento $apartamento)
     {
+        return view('apartamentos.edit', compact('apartamento'));
         //
     }
 
@@ -54,6 +58,8 @@ class ApartamentoController extends Controller
      */
     public function update(Request $request, Apartamento $apartamento)
     {
+        $apartamento->update($request->all());
+        return redirect()->route('apartamentos.index');
         //
     }
 
@@ -62,6 +68,8 @@ class ApartamentoController extends Controller
      */
     public function destroy(Apartamento $apartamento)
     {
+        $apartamento->delete();
+        return redirect()->route('apartamentos.index');
         //
     }
 }

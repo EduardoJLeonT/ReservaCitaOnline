@@ -28,6 +28,7 @@
                     <li>Gestión de citas</li>
                     <li>Atencion oportuna</li>
                 </ul>
+            </section>
 
             <section id="galeria" class="mb-8">
                 <h2 class="text-3xl font-semibold text-gray-800 mb-2">Galeria</h2>
@@ -49,5 +50,6 @@
         </div>
     </div>
 </body>
+
 @endsection
 

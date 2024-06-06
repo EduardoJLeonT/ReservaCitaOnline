@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Apartamento extends Model
 {
     use HasFactory;
+    protected $fillable = ['nombre', 'ubicacion', 'descripcion'];
 }

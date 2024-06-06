@@ -17,8 +17,9 @@ class ApartamentoFactory extends Factory
     public function definition(): array
     {
         return [
-            'Nombre_Apto' => fake()->word(),
-            'Ubicacion_Descripcion' => fake()->text(),
+            'nombre' => fake()->word(),
+            'ubicacion' => fake()->word(),
+            'descripcion' => fake()->text(),
         ];
     }
 }

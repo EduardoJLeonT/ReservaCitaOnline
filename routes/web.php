@@ -16,4 +16,7 @@ use App\Http\Controllers\ApartamentoController;
 
 Route::view('/', 'welcome');
 
-Route::get('/Apartamentos', [ApartamentoController::class, 'index'])->name('apartamentos.index');
+//CRUD de producto
+
+Route::resource('apartamentos', ApartamentoController::class);
+

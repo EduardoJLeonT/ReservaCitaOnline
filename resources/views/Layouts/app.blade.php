@@ -7,12 +7,12 @@
     <title>@yield('titulo','ReservaCitaOnline')</title>
     @vite('resources/css/app.css')
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
     <header>
         {{--NavBar--}}
         @include('layouts.navbar')
     </header>
-    <main>
+    <main class="flex-grow">
         {{--el @yield podemos reservar un espacion para agregar contenido para una vista--}}
         @yield('contenido')
     </main>
