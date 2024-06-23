@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('titulo', 'Modelos apartamentos')
 @section('contenido')
+
+<div class="flex justify-start m-6">
+    <a href="{{ route('apartamentos.create') }}" class="bg-orange-500 text-white font-semibold px-4 py-2 mt-4 rounded hover:bg-green-800 transition duration-200">Crear Producto</a>
+</div>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-6">
         @foreach ($apartamentos as $apartamento)
             <div class="card w-60 bg-base-100 shadow-xl">

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('titulo','consultar apartamentos')
+@section('titulo','ReservaCitaOnline')
 @section('contenido')
 <body class="bg-green-200 font-sans">
     <div class="container mx-auto py-8">
@@ -9,7 +9,7 @@
             <section class="mb-8">
                 <h2 class="text-3xl font-semibold text-black-800 mb-2">Bienvenido a Reserva de Citas Online</h2>
                 <p class="text-gray-700">Reserva tu cita para ver apartamentos de forma rápida y conveniente.</p>
-                <button id="Boton" class="bg-orange-500 text-white font-semibold px-4 py-2 mt-4 rounded hover:bg-green-800 transition duration-200">Reservar Cita</button>
+                <button class="bg-orange-500 text-white font-semibold px-4 py-2 mt-4 rounded hover:bg-green-800 transition duration-200">Reservar Cita</button>
             </section>
 
             <section id="proyectos" class="mb-8">
