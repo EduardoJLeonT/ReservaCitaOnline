@@ -5,7 +5,7 @@
         @foreach ($apartamentos as $apartamento)
             <div class="card w-60 bg-base-100 shadow-xl">
                 <figure>
-                    <img src="https://source.unsplash.com/random/800x600/?apartments&{{ $apartamento->id }}" alt="{{ $apartamento->nombre }}"/>
+                    <img src="https://picsum.photos/800/600?random={{ $apartamento->id }}&category=architecture" alt="{{ $apartamento->nombre }}" />
                 </figure>
                 <div class="card-body">
                     <h2 class="card-title">
