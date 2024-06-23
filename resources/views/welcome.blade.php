@@ -1,13 +1,14 @@
 @extends('layouts.app')
 @section('titulo','ReservaCitaOnline')
 @section('contenido')
-<body class="bg-green-200 font-sans">
+
+<body style="background-image: url(https://www.aplustopografos.com/wp-content/uploads/2020/01/planos-t%C3%A9cnico-de-arquitectura_phixr.jpg);" class="w-screen h-screen">
     <div class="container mx-auto py-8">
-        <div class="max-w-xl mx-auto">
+        <div class="max-w-xl mx-auto bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
             <img src="https://www.jaramillomora.com/wp-content/uploads/2022/09/axo-lite-industrial.jpg" width="720" height="600" alt="Modelo apto" class="mx-auto mb-8 rounded-lg shadow-lg">
 
             <section class="mb-8">
-                <h2 class="text-3xl font-semibold text-black-800 mb-2">Bienvenido a Reserva de Citas Online</h2>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-2">Bienvenido a Reserva de Citas Online</h2>
                 <p class="text-gray-700">Reserva tu cita para ver apartamentos de forma rápida y conveniente.</p>
                 <button class="bg-orange-500 text-white font-semibold px-4 py-2 mt-4 rounded hover:bg-green-800 transition duration-200">Reservar Cita</button>
             </section>
@@ -52,4 +53,5 @@
 </body>
 
 @endsection
+
 
